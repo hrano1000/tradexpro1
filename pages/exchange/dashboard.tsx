@@ -240,6 +240,12 @@ const Dashboard: NextPage = () => {
             </div>
           </div>
         </div>
+        useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//code.tidio.co/oteaprtd8oc2ydgvh7opj0adzxvwzopy.js";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
         <div className="cp-user-main-wrapper-dashboard">
           <div className="container-fluid">
             <div
