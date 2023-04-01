@@ -67,24 +67,11 @@ const Home: NextPage = ({
     ],
   };
   useEffect(() => {
-    //@ts-ignore
-    window.$crisp = [];
-    //@ts-ignore
-    // window.CRISP_WEBSITE_ID = process.env.NEXT_PUBLIC_CRISP_ID;
-    window.CRISP_WEBSITE_ID = common.live_chat_key;
-    // live_chat_key
-    (function () {
-      //@ts-ignore
-      if (common.live_chat_status == "1") {
-        var d = document;
-        var s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        //@ts-ignore
-        s.async = 1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      }
-    })();
-  }, [common.live_chat_status]);
+  const script = document.createElement("script");
+  script.src = "//code.tidio.co/oteaprtd8oc2ydgvh7opj0adzxvwzopy.js";
+  script.async = true;
+  document.head.appendChild(script);
+}, []);
 
   return (
     <SEO seoData={customSettings}>
