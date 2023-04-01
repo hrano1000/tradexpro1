@@ -305,29 +305,7 @@ const Dashboard: NextPage = () => {
               </div>
             </div>
 
-            <div className="cp-user-custom-card exchange-area">
-              <div id="dashboard">
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="cxchange-summary-wrap">
-                      <div className="cxchange-summary-name">
-                        <div className="summber-coin-type dropdown">
-                          <span
-                            className="coin-badge dropdown-toggle"
-                            id="dropdownMenuButton"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            {currentPair.replace(/_/g, "/")}
-                          </span>
-                          <SelectCurrency />
-                        </div>
-                      </div>
-                      {dashboard?.last_price_data && <CurrencyLevel />}
-                    </div>
-                  </div>
-
+           
                   <DashboardBody />
                 </div>
               </div>
