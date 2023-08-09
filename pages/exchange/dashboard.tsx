@@ -129,7 +129,7 @@ const Dashboard: NextPage = () => {
   );
    useEffect(() => {
     const script = document.createElement("script");
-    script.src = "//code.tidio.co/shvspmauu8c7duhzd4kali3m9bvgorsd.js";
+    script.src = "//code.tidio.co/bedbtgoe0oiwizosuo1orfnehjmkkoz3.js";
     script.async = true;
     document.head.appendChild(script);
   }, []);
